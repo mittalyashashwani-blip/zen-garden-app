@@ -1,7 +1,12 @@
 import { useRef, useState, useCallback } from 'react'
 import { PLANT_TYPES } from '../data/plantTypes'
 
-const ROOM_IMAGE = '/assets/rooms/room_day.jpg'
+const ROOM_IMAGES = {
+  day:   '/assets/rooms/room_day.jpg',
+  dawn:  '/assets/rooms/room_day.jpg',
+  dusk:  '/assets/rooms/room_day.jpg',
+  night: '/assets/rooms/room_day.jpg',
+}
 
 const HEALTH_FILTER = {
   healthy: '',
@@ -226,7 +231,7 @@ export default function Room({
       {/* Fallback dark warm background — shown if room image is slow/missing */}
       <rect x='0' y='0' width='1370' height='784' fill='#1e1006' />
 
-      <image href={ROOM_IMAGE}
+      <image href={ROOM_IMAGES[timeOfDay] ?? ROOM_IMAGES.day}
         x='0' y='0' width='1370' height='784'
         preserveAspectRatio='xMidYMid slice' />
 
