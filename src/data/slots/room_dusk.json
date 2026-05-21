@@ -1,0 +1,42 @@
+{
+  "roomId": "room_dusk",
+  "viewBox": { "width": 1370, "height": 784 },
+  "slots": [
+    {
+      "id": "slot_1",
+      "x": 130, "y": 250,
+      "maxWidth": 155, "zIndex": 2,
+      "label": "fireplace mantel — left pot"
+    },
+    {
+      "id": "slot_2",
+      "x": 210, "y": 245,
+      "maxWidth": 145, "zIndex": 2,
+      "label": "fireplace mantel — right pot"
+    },
+    {
+      "id": "slot_3",
+      "x": 430, "y": 420,
+      "maxWidth": 175, "zIndex": 5,
+      "label": "window sill — pot 2"
+    },
+    {
+      "id": "slot_4",
+      "x": 515, "y": 420,
+      "maxWidth": 175, "zIndex": 5,
+      "label": "window sill — pot 3"
+    },
+    {
+      "id": "slot_5",
+      "x": 484, "y": 612,
+      "maxWidth": 380, "zIndex": 7,
+      "label": "floor centre — large pot"
+    },
+    {
+      "id": "slot_6",
+      "x": 1116, "y": 608,
+      "maxWidth": 345, "zIndex": 7,
+      "label": "floor right — large pot near sofa"
+    }
+  ]
+}
