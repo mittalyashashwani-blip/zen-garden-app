@@ -1,16 +1,54 @@
-# React + Vite
+# Zen Garden App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cozy daily-habit gardening game. Tend plants, water them, watch them grow. Built with React + Vite.
 
-Currently, two official plugins are available:
+**Vibe:** Viridi × Duolingo × Animal Crossing × Tsuki's Odyssey
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Play it
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Version | Link |
+|---|---|
+| **Current** (new watercolour room) | https://zen-garden-yash.vercel.app |
+| **Original room art** (old PNG backgrounds) | https://zen-garden-app-ochre.vercel.app |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Opens at http://localhost:5173 — landscape only (rotate prompt on portrait).
+
+**Dev shortcuts:**
+- `Shift+E` — toggle slot drag editor (move plant slots onto painted pots)
+- `Shift+S` — copy updated slot JSON to clipboard
+- `Shift+T` — advance one day (test growth/watering)
+
+---
+
+## Docs in this repo
+
+| File | What it covers |
+|---|---|
+| [`FOR_CLAUDE.md`](./FOR_CLAUDE.md) | Full collaborator briefing — read this first. Game design, architecture, the plant placement problem. |
+| [`STYLE_BIBLE.md`](./STYLE_BIBLE.md) | Visual spec for all assets. Gemini prompts, style rules, rejection criteria. |
+| [`GAME_UI_BIBLE.md`](./GAME_UI_BIBLE.md) | Interaction model, UI rules, locked decisions. |
+| [`IMPLEMENTATION_PLAN.md`](./IMPLEMENTATION_PLAN.md) | MVP1 milestone plan. |
+
+---
+
+## Stack
+
+- React + Vite
+- Plain CSS (no Tailwind)
+- localStorage — no backend
+- SVG room scene with canvas particle layer
+
+## Current status
+
+MVP1 core loop is working: plant, water, grow, earn coins. Main open issue is **plant slot positions** — the 6 terracotta pots in the room art need slots calibrated to them. See `FOR_CLAUDE.md` for full context.
