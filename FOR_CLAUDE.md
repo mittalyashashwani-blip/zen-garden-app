@@ -10,7 +10,7 @@ A cozy, daily-habit gardening app. You tend plants in a painterly cabin room —
 
 **Vibe references:** Viridi + Duolingo + Animal Crossing + Tsuki's Odyssey  
 **Stack:** React + Vite · Plain CSS · localStorage (no backend)  
-**Live URL:** https://zen-garden-louqdz9hi-mittalyashashwani-blips-projects.vercel.app  
+**Live URL:** https://zen-garden-r8xjkdcrk-mittalyashashwani-blips-projects.vercel.app  
 **Dev:** `npm run dev` → http://localhost:5173
 
 ---
