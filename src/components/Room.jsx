@@ -1,7 +1,7 @@
 import { useRef, useState, useCallback } from 'react'
 import { PLANT_TYPES } from '../data/plantTypes'
 
-const ROOM_IMAGE = '/assets/rooms/room_day.jpg'
+const ROOM_IMAGE = '/assets/rooms/room_day.png'
 
 const HEALTH_FILTER = {
   healthy: '',
